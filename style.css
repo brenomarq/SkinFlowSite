@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333; /* Cinza escuro para texto padrão */
+  background-color: #fff;
+}
+
+/* Navegação */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2980b9; /* Azul forte profissional */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3498db; /* Destaque ao passar o mouse */
+}
+
+/* Hero Section */
+.hero {
+  /* Gradiente suave de azul muito claro, lembrando água */
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6f7ff 100%);
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #2c3e50; /* Azul quase preto para contraste */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #3498db; /* Azul Principal (Vibrante mas calmo) */
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+}
+
+.btn:hover {
+  background-color: #2980b9; /* Azul um pouco mais escuro */
+  transform: translateY(-2px);
+}
+
+/* Container Geral */
+.container {
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+}
+
+/* Grid de Features */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  padding: 2.5rem;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-top: 5px solid #3498db; /* Borda superior azul */
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+  color: #2980b9;
+}
+
+/* Suporte */
+.support-section {
+  background-color: #f4faff; /* Fundo azul gelo muito sutil */
+  padding: 4rem 5%;
+}
+
+.contact-box {
+  margin-top: 2rem;
+  padding: 2.5rem;
+  background: white;
+  display: inline-block;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e1f0fa;
+}
+
+.email-link {
+  font-size: 1.3rem;
+  color: #3498db;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.small-text {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50; /* Azul Marinho Escuro */
+  color: #ecf0f1;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #85c1e9; /* Azul claro para links no fundo escuro */
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.9rem;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .container {
+    padding: 3rem 5%;
+  }
+}
